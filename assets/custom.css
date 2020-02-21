@@ -12,6 +12,10 @@ h2, h3 {
   -webkit-text-fill-color: transparent;
 }
 
+h3.star {
+  font-size: 1rem;
+}
+
 h4.subtle-heading{
   text-transform: uppercase;
 }
@@ -171,8 +175,10 @@ section.work img:hover {
 }
 
 .northarrow {
-  cursor: url(""),n-resize;
+  cursor:n-resize;
 }
+
+/*KITTEN PAW! url(img src="/images/kittenpaw.png"), */
 
 .patterns {
   margin: 2rem;
@@ -182,35 +188,35 @@ section.work img:hover {
   width:30rem */
 }
 
-.paintings {
+.textiles {
   position: absolute;
-    top: 3rem;
-    right: 25%;
-    left: 15%;
-    bottom: 5rem;
-    height: 25rem;
-    width: 25rem;
+    top: 55%;
+    right: 80%;
+    left: 65%;
+    bottom: 5%;
+    height: 18rem;
+    width: 18rem;
     object-fit: cover;
 }
 
-.textiles {
+.paintings {
   position: absolute;
-    top: 10rem;
-    right: 80%;
-    left: 60%;
-    bottom: 5rem;
-    height: 12rem;
-    width: 12rem;
-    object-fit: cover;
+    top: 22%;
+    right: 25%;
+    left: 15%;
+    bottom: 5%
+    height: 40rem;
+    width: 40rem;
+    object-fit: contain;
 }
 
 .sketches {
   position: absolute;
-    top: 0;
+    top: 5%;
     right: 0;
-    left: 0;
-    bottom: 5rem;
-    height: 8rem;
-    width: 8rem;
-    object-fit: cover;
+    left: 5%;
+    bottom: 5%;
+    height: 15rem;
+    width: 15rem;
+    object-fit: contain;
 }
