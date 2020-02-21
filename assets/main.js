@@ -10,7 +10,6 @@ $(document).ready(function() {
 
 	});
 	// end hamburger menu
-console.log("bob")
 	// This is the pop-up gallery
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',

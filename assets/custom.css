@@ -30,6 +30,10 @@ p {
   position: relative;
 }
 
+.stack {
+  display: block;  
+}
+
 /* CUSTOM NAV STYLES */
 header nav a {
   font-family: 'Londrina Outline', cursive;

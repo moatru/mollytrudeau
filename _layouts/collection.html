@@ -3,11 +3,11 @@ layout: default
 ---
 
 <section class="padded centered">
-  <h2> Paintings </h2>
+  <h2> {{page.title}} </h2>
 
     <div class="masonry">
 
-      {% for post in site.posts %}
+      {% for post in site.category[page.category] %}
 
       <a class="item" href="{{post.url}}">
         <img src='{{post.image_path}}' alt="{{post.description}}">
