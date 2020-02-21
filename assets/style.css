@@ -32,7 +32,7 @@
   .centered {  text-align: center;   }
 
   .padded   {  padding: 5%; padding-right:0;   }
-  .padded-1 {  padding: 1rem;  }
+  .padded-1 {  padding: .5rem;  }
   .padded-2 {  padding: 2rem;  }
 
   .capped-width { width: 80%; margin: auto;}
@@ -406,9 +406,8 @@ nav.fixed{
   }
 
   /* ------------- Blog Post Elements ------------- */
-  /* ------------- YOU DO NOT HAVE A BLOG ON THIS SITE -------------  */
   /* ---- Blog loop elements style 1 ------ */
-  /* .blog-loop .blog-item {
+.blog-loop .blog-item {
     color: inherit;
     text-decoration: none;
     width: 100%;
@@ -424,35 +423,35 @@ nav.fixed{
   .blog-loop img,
   .post-body img {
       margin-bottom: 2vh;
-  } */
+  }
 
   /* ---- Blog loop elements style 2 ------ */
-  /* .blog-item-wide .bg-image {
+ .blog-item-wide .bg-image {
     padding-bottom: 30%;
-  } */
+  }
 
 /* selects every second one and reverses it */
-  /* .text-bump {
+ .text-bump {
     margin-left: -2rem;
     background-color: rgb(240,240,245);
     margin-top: 2rem;
     margin-bottom: 2rem;
   } */
 
-/* selects every second one and reverses it */
-  /* .blog-item-wide:nth-child(odd) {
+/*selects every second one and reverses it */
+ .blog-item-wide:nth-child(odd) {
     flex-direction: row-reverse;
   } */
 
 /* selects every second one and reverses it */
-  /* .blog-item-wide:nth-child(odd) .text-bump {
+.blog-item-wide:nth-child(odd) .text-bump {
     margin-right: -2rem;
     margin-left: 0;
   } */
 
 
   /* ---- Blog post pages ------ */
-  /* .post-body {
+ .post-body {
     padding-right: 3%;
   }
 
