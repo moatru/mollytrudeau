@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="grid-center-middle relative">
+  <div class="col">
+    <img class="art-img" src="{{page.image_path}}">
+  </div>
+
+  <div class="art-text">
+    <h2> {{page.title}} </h2>
+    <p> {{page.medium}} </p>
+    {% if page.size %}
+    <p> {{page.size}} <p>
+    {% endif %}
+      {% if page.buy-link %}
+      <h3 class="button"> contact to purchase </h3>
+      {% else %}
+    <h3> sold! <h3>
+      {% endif %}
+  </div>
+</section>

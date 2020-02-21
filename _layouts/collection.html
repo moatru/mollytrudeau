@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="padded centered">
+  <h2> Paintings </h2>
+
+    <div class="masonry">
+
+      {% for post in site.posts %}
+
+      <a class="item" href="{{post.url}}">
+        <img src='{{post.image_path}}' alt="{{post.description}}">
+      </a>
+
+      {% endfor %}
+
+    </div>
+</section>
