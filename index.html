@@ -2,3 +2,19 @@
 layout: default
 title: MT - Home
 ---
+
+
+<section class="relative">
+  {% for post in site.categories.patterns limit:1 %}
+  <img class="patterns" src="{{post.image_path}}" alt="{{postimage_alt}}">
+  {% endfor %}
+  {% for post in site.categories.paintings limit:1 %}
+  <img class="paintings" src="{{post.image_path}}" alt="{{postimage_alt}}">
+  {% endfor %}
+  {% for post in site.categories.textiles limit:1 %}
+  <img class="textiles" src="{{post.image_path}}" alt="{{postimage_alt}}">
+  {% endfor %}
+  {% for post in site.categories.sketches limit:1 %}
+  <img class="sketches" src="{{post.image_path}}" alt="{{postimage_alt}}">
+  {% endfor %}
+</section>

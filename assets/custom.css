@@ -1,8 +1,8 @@
 /* --------- TYPOGRAPHY STYLES --------- */
 h2.home {
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 3rem;
+  letter-spacing: 2rem;
 }
 
 h2, h3 {
@@ -23,7 +23,7 @@ p {
 }
 
 nav {
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     background-image: url("/images/lightglitter.gif");
     -webkit-background-clip: text;
@@ -55,6 +55,11 @@ header nav a {
   -webkit-text-fill-color: transparent;
 }
 
+.header-offset{
+  padding-top: 11rem;
+
+}
+
 .bio {
   width: 20rem;
   padding: 3rem;
@@ -66,7 +71,7 @@ footer img {
 }
 
 footer nav a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   background-image: url("/images/lightglitter.gif");
   -webkit-background-clip: text;
@@ -163,4 +168,49 @@ section.work img:hover {
   right:0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.northarrow {
+  cursor: url(""),n-resize;
+}
+
+.patterns {
+  margin: 2rem;
+  width: calc(100% - 4rem);
+  object-fit: cover;
+  /* heigt:30rem
+  width:30rem */
+}
+
+.paintings {
+  position: absolute;
+    top: 3rem;
+    right: 25%;
+    left: 15%;
+    bottom: 5rem;
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.textiles {
+  position: absolute;
+    top: 10rem;
+    right: 80%;
+    left: 60%;
+    bottom: 5rem;
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+}
+
+.sketches {
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 5rem;
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
 }

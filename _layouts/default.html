@@ -27,23 +27,25 @@
 <body>
   <!-- HEADER 4 -->
 
-  <header class="grid-center {{page.header-class}}">
+  <header class="grid-center fixed {{page.header-class}}">
     <div class="col-12-middle">
-      <a href="/index.html"><h2 class="home centered"> Molly Trudeau </h2></a>
+      <a href="/index.html"><h2 class="home centered">Molly Trudeau</h2></a>
     </div>
   </header>
 
-  <section class="grid">
+  <section class="grid header-offset">
 
 <div class="col-3 padded">
   <!-- SIDE NAV -->
-  <nav>
+  <nav class="fixed">
     <a class="stack padded" href="/paintings"> Paintings </a>
     <a class="stack padded" href="/patterns"> Patterns </a>
     <a class="stack padded" href="/textiles"> Textiles </a>
     <a class="stack padded" href="/sketches"> Sketches </a>
+    <a class="stack padded" href="/about"> About </a>
   </nav>
 </div>
+
 <div class="col-9">
 <!-- page-content -->
   {{ content }}
@@ -55,12 +57,12 @@
   <footer class="grid-middle">
     <!-- column -->
     <div class="col-3_sm-12 padded">
-      <img src="/images/line.GIF">
+      <!-- <img src="/images/line.GIF"> -->
       </div>
 
     <!-- <div class="col-1 sm-hidden"></div> -->
     <!-- column -->
-    <div class="col-9_sm-12-middle padded right">
+    <div class="col-12_sm-12-middle padded centered">
       <nav class="inline">
         <a href="/index.hmtl"> Visual Artist </a>|
         <a href="https://merciful-dolphin.cloudvent.net"> Web Developer </a>|

@@ -31,7 +31,7 @@
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
 
-  .padded   {  padding: 5%;    }
+  .padded   {  padding: 5%; padding-right:0;   }
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
 
@@ -143,8 +143,7 @@
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
 
-  .button
- {
+  .button {
     text-decoration: none;
     color: #EAF2F8;
     border: 2px solid;
@@ -155,7 +154,7 @@
     font-size: 2rem;
     font-weight: 500;
     font-family: 'Londrina Outline', cursive;
-    background-image: url("/images/source.gif");
+    background-image: url("/images/lightglitter.gif");
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -222,6 +221,12 @@
     font-family: 'Londrina Outline', cursive;
   }
 
+nav.fixed{
+  position: fixed;
+  top: 12rem;
+  width: 11rem;
+}
+
   header nav a,
   .inline a {
     display: inline-block;
@@ -272,7 +277,7 @@
   /* Fixed Header Option */
   header.fixed {
     position: fixed;
-    background-color: #f9ca24;
+    background-color:;
     top:0;
     left:0;
     right:0;
@@ -332,7 +337,7 @@
   }
 
   footer h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   /* -------------  BANNERS -------------  */

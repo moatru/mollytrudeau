@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<section class="grid-center-middle relative">
+<section class="grid-left-middle relative">
+
   <div>
-    <img class="art-img" src="{{page.image_path}}">
+    <a href="/{{page.category}}" class="northarrow">
+      <img class="art-img" src="{{page.image_path}}">
+    </a>
   </div>
 
-  <div class="art-text padded">
+  <div class="grid-center stack art-text padded">
     <h2> {{page.title}} </h2>
     <p> {{page.medium}} </p>
     {% if page.size %}
