@@ -23,7 +23,7 @@ p {
 }
 
 nav {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     background-image: url("/images/lightglitter.gif");
     -webkit-background-clip: text;
