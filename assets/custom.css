@@ -155,12 +155,12 @@ section.work img:hover {
 /* artwork */
 
 .art-img{
-  max-height: calc(100vh - 5.3rem)
+  max-height:90vh;
 }
 
 .art-text{
   position: absolute;
   right:0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
 }

@@ -3,18 +3,18 @@ layout: default
 ---
 
 <section class="grid-center-middle relative">
-  <div class="col">
+  <div>
     <img class="art-img" src="{{page.image_path}}">
   </div>
 
-  <div class="art-text">
+  <div class="art-text padded">
     <h2> {{page.title}} </h2>
     <p> {{page.medium}} </p>
     {% if page.size %}
     <p> {{page.size}} <p>
     {% endif %}
       {% if page.buy-link %}
-      <h3 class="button"> contact to purchase </h3>
+      <a href="mailto:joe@example.com?subject=feedback" class="button"> contact to purchase </a>
       {% else %}
     <h3> sold! <h3>
       {% endif %}
