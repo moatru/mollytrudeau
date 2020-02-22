@@ -5,6 +5,10 @@ h2.home {
   letter-spacing: 2rem;
 }
 
+h2.about{
+  font-size: 2.8rem;
+}
+
 h2, h3 {
   text-transform: uppercase;
   background-image: url("/images/lightglitter.gif");
@@ -191,7 +195,7 @@ section.work img:hover {
 .patterns {
   margin: 2rem;
   width: calc(100% - 4rem);
-  object-fit: cover;
+  object-fit: contain;
   /* heigt:30rem
   width:30rem */
 }
