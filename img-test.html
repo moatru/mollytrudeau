@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<section>
+  {% for post in site.posts %}
+<p>{{post.title}}</p>
+<img src="{{post.image_path}}" alt="">
+  {% endfor %}
+</section>
