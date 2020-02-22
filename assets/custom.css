@@ -187,7 +187,7 @@ section.work img:hover {
 }
 
 .northarrow {
-  cursor:n-resize;
+  cursor: url('/images/kittenpaw.png'),n-resize;
 }
 
 /*KITTEN PAW! url(img src="/images/kittenpaw.png"), */
