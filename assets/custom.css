@@ -194,7 +194,7 @@ section.work img:hover {
 .patterns {
   margin: 2rem;
   width: calc(100% - 4rem);
-  object-fit: contain;
+  object-fit: cover;
   /* heigt:30rem
   width:30rem */
 }
@@ -207,7 +207,7 @@ section.work img:hover {
     bottom: 5%;
     height: 18rem;
     width: 18rem;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .paintings {
@@ -281,6 +281,7 @@ h2.home {
 nav {
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: grey;
     background-image: url("/images/lightglitter.gif");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
