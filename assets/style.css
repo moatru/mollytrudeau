@@ -800,5 +800,9 @@ section.work img:hover {
   min-height: 10vh;
 }
 
+.stack {
+    display: inline-block;
+}
+
 
 } /* end media query */

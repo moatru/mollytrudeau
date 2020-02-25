@@ -190,7 +190,6 @@ section.work img:hover {
   cursor: url('/images/kittenpaw.png'),n-resize;
 }
 
-/*KITTEN PAW! url(img src="/images/kittenpaw.png"), */
 
 .patterns {
   margin: 2rem;
@@ -231,4 +230,60 @@ section.work img:hover {
     height: 15rem;
     width: 15rem;
     object-fit: contain;
+}
+@media(max-width:600px){
+.active {
+  color: white;
+}
+
+.hamburger {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 0.2;
+  right: 1rem;
+  top: 1rem;
+  z-index: 3;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  background-color: rgb(60,60,65);
+  padding: 10%;
+}
+.mobile-nav a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+h2.home {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-align: center;
+  padding-left: 2rem;
+}
+
+.header-offset{
+  padding-top: 8rem;
+}
+
+nav {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-image: url("/images/lightglitter.gif");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 }
