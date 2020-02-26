@@ -34,6 +34,7 @@
   .padded   {  padding: 5%; padding-right:0;   }
   .padded-1 {  padding: .5rem;  }
   .padded-2 {  padding: 2rem;  }
+  .padding-top {padding-top: 2rem;}
 
   .capped-width { width: 80%; margin: auto;}
 
