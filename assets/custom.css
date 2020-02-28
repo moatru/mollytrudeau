@@ -282,15 +282,13 @@ nav {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: grey;
-    background-image: url("/images/lightglitter.gif");
+    /* background-image: url("/images/lightglitter.gif");
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
 
   /* .stack {
-      display: inline-block;
-      z-index: 10;
-      padding-left: 1rem;
+    display:
   } */
 
 }
