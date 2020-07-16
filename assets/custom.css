@@ -237,6 +237,48 @@ section.work img:hover {
   nav {
       -webkit-text-fill-color: #f4ecf7;
     }
+
+    .patterns {
+      margin: 1rem;
+      width: calc(100% - 1rem);
+      object-fit: cover;
+      /* heigt:30rem
+      width:30rem */
+    }
+
+    .textiles {
+      position: absolute;
+        top: 55%;
+        right: 80%;
+        left: 65%;
+        bottom: 5%;
+        height: 18rem;
+        width: 18rem;
+        object-fit: contain;
+    }
+
+    .paintings {
+      position: absolute;
+        top: 2%;
+        right: 25%;
+        left: 15%;
+        bottom: 5%
+        height: 40rem;
+        width: 40rem;
+        object-fit: contain;
+    }
+
+    .sketches {
+      position: absolute;
+        top: 73%;
+        right: 0;
+        left: 5%;
+        bottom: 5%;
+        height: 15rem;
+        width: 15rem;
+        object-fit: contain;
+    }
+
 }
 
 

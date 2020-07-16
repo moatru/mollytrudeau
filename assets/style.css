@@ -226,6 +226,7 @@ nav.fixed{
   position: fixed;
   top: 12rem;
   width: 11rem;
+  z-index: 20;
 }
 
   header nav a,
