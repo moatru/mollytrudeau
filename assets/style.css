@@ -251,6 +251,16 @@ nav.fixed{
     color: white;
   }
 
+  a{
+    text-decoration: none;
+    color: #CC99FF;
+    transition: all 1s;
+  }
+
+  a:hover{
+    color: #E6CCFF;
+  }
+
   /* Dropdown Header */
   header li {
     list-style: none;
