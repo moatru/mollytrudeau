@@ -237,7 +237,7 @@ section.work img:hover {
   nav {
       background-image: url("/images/lightglitter.gif");
       -webkit-background-clip: text;
-      -webkit-text-fill-color: #f4ecf7;
+      -webkit-text-fill-color: #CC99FF;
     }
 
     .patterns {
