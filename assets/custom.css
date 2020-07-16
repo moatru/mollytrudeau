@@ -231,6 +231,15 @@ section.work img:hover {
     width: 15rem;
     object-fit: contain;
 }
+
+/* This media query kicks into action at the gridlex sm breakpoint */
+@media(max-width:768px) {
+  nav {
+      -webkit-text-fill-color: #f4ecf7;
+    }
+}
+
+
 @media(max-width:600px){
 .active {
   color: white;
@@ -245,7 +254,7 @@ section.work img:hover {
   z-index: 3;
 }
 
-.mobile-nav {
+/* .mobile-nav {
   display: none;
   position: absolute;
   top: 0;
@@ -260,7 +269,7 @@ section.work img:hover {
   padding: 1rem;
   display: block;
   text-decoration: none;
-}
+} */
 
 .mobile-hide {
   display: none;
@@ -277,11 +286,6 @@ h2.home {
 .header-offset{
   padding-top: 8rem;
 }
-
-nav {
-    font-size: 1.5rem;
-    color:black;
-  }
 
   /* .stack {
     display:
