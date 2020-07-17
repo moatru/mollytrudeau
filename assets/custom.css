@@ -250,6 +250,26 @@ section.work img:hover {
     object-fit: contain;
 }
 
+/* This media query kicks into action at the gridlex m breakpoint */
+@media(max-width:1024px	) {
+  .header-offset-artwork{
+    padding-top: 15rem;
+  }
+
+  .header-offset{
+    padding-top: 6rem;
+  }
+
+  /* .art-text{
+    position: absolute;
+    right:80%;
+    bottom: 100%;
+    background-color: rgba(255, 255, 255, 0.0);
+  } */
+
+
+ }
+
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
