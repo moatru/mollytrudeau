@@ -1,15 +1,17 @@
 
 
-$(document).ready(function() {
-	//make sure the page is ready befor running the scripts
-	// This is the hamburger menu
-	$(".hamburger").click(function(){
+$( document ).ready(function() {
+   $(".burger-button").click(function(){
+     $(".burger-button").toggleClass("active");
+     $(".burger-menu").slideToggle();
+   });
 
-	  $(this).toggleClass('active');
-	  $(".mobile-menu").fadeToggle();
-
-	});
+  $(".burger-menu").click(function(){
+    $(".burger-button").toggleClass("active");
+    $(".burger-menu").slideToggle();
+  });
 	// end hamburger menu
+
 	// This is the pop-up gallery
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',

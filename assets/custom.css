@@ -37,14 +37,31 @@ p {
   color: black;
 }
 
-nav {
+/* nav a {
     font-size: 2.3rem;
     text-transform: uppercase;
     background-image: url("/images/lightglitter.gif");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-}
+  } */
+
+nav[role="main"] a{
+      font-size: 2.3rem;
+      text-transform: uppercase;
+      background-image: url("/images/lightglitter.gif");
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav[role="mobile"] a{
+        display: none;
+          font-size: 3.5rem;
+          text-transform: uppercase;
+          background-image: url("/images/lightglitter.gif");
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
 
 /* UTILITES */
 .paddedbottom-0 {
@@ -70,8 +87,9 @@ header nav a {
   -webkit-text-fill-color: transparent;
 }
 
+
 .header-offset{
-  padding-top: 11rem;
+  padding-top: 4rem;
 
 }
 
@@ -183,7 +201,7 @@ section.work img:hover {
   /* margin: 10px; */
   right:10rem;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .northarrow {
@@ -192,7 +210,7 @@ section.work img:hover {
 
 
 .patterns {
-  margin: 2rem;
+  /* margin: 0rem; */
   width: calc(100% - 4rem);
   object-fit: cover;
   /* heigt:30rem
@@ -223,7 +241,7 @@ section.work img:hover {
 
 .sketches {
   position: absolute;
-    top: 5%;
+    top: 0%;
     right: 0;
     left: 5%;
     bottom: 5%;
@@ -235,10 +253,107 @@ section.work img:hover {
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
-}
+  .header-offset{
+    padding-top: 13rem;
+  }
+
+  /* HAMBURGER MENU - MOBILE NAV */
+  /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+  .burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 9999999999;
+    padding: 8px;
+  }
+  /*this is where you can chand the color of the buttons*/
+  .burger-button span{
+    width: 25px;
+    border: 2px solid #E6CCFF;
+    background-color: #E6CCFF;
+    display: block;
+    border-radius: 22px;
+    transition: 2s;
+  }
+  .burger-button.active span{
+    border-color: #E6CCFF;
+    background-color:#E6CCFF;
+  }
+
+  .burger-top, .burger-bottom{
+    position: absolute;
+  }
+
+  .burger-top{
+    top: 02px;
+  }
+
+  .burger-bottom{
+    bottom: 02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top{
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+  }
+
+  .burger-button.active .burger-middle{
+    transform: rotateZ(270deg);
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+
+  /* make sure this has the same bottom as the burger button has padding*/
+
+  .burger-button.active .burger-bottom{
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+  }
+
+
+  .burger-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 99999999;
+  }
+
+  .burger-menu a {
+    text-decoration: none;
+    padding: 15px 11px;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #C3BFBC;
+    display:block;
+    padding:5px 15px;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+  .burger-menu li{list-style:none}
+  /*
+  .dropdown-nav:hover .dropdown-content {
+      display: block;
+  } */
+
+  nav[role="mobile"] a{
+      display:block;
+        -webkit-text-fill-color: #C3BFBC;
+  }
+
+  }
 
 
 @media(max-width:600px){
+
 .active {
   color: white;
 }
@@ -252,29 +367,12 @@ section.work img:hover {
   z-index: 3;
 }
 
-/* .mobile-nav {
-  display: none;
-  position: absolute;
-  top: 0;
-  left:0;
-  right:0;
-  bottom: 0;
-  background-color: rgb(60,60,65);
-  padding: 10%;
-}
-.mobile-nav a {
-  color: white;
-  padding: 1rem;
-  display: block;
-  text-decoration: none;
-} */
-
 .mobile-hide {
   display: none;
 }
 
 h2.home {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
   text-align: left;
@@ -290,17 +388,7 @@ h2.home {
   } */
 
 
-  nav {
-      background-image: url("/images/lightglitter.gif");
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: #CC99FF;
-    }
-
-    nav a:visited {
-      -webkit-text-fill-color: #CC99FF;
-
-    }
-
+/* HOMEPAGE IMAGES ON MOBILE */
     .patterns {
       margin: 1rem;
       width: calc(100% - 1rem);
@@ -341,4 +429,13 @@ h2.home {
         width: 15rem;
         object-fit: contain;
     }
+
+    .art-text{
+    display:none;
+    }
+
+/* body {
+  font-family: 'Open Sans', sans-serif;
+  color: #DEAF9C;
+} */
 }

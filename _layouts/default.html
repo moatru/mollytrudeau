@@ -31,8 +31,36 @@
 
 
 <body>
-  <!-- HEADER 4 -->
 
+  <!-- HAMBURGER MENU -->
+  <nav role="mobile">
+    <div class="burger-button">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+    </div>
+     <div class="burger-menu">
+      <ul>
+        <li>
+          <a href="/paintings">Paintings</a>
+        </li>
+        <li>
+          <a href="/patterns">Patterns</a>
+        </li>
+        <li>
+          <a href="/textiles" class="on-page">Textiles</a>
+        </li>
+        <li>
+          <a href="/sketches" class="on-page">Sketches</a>
+        </li>
+        <li>
+          <a href="/about" class="on-page">About</a>
+        </li>
+      <ul>
+    </div>
+  </nav>
+
+  <!-- HEADER 4 -->
   <header class="grid-center fixed {{page.header-class}}">
     <div class="col-12-middle">
       <a href="/"><h2 class="home centered">⋆Molly Trudeau⋆</h2></a>
@@ -40,25 +68,18 @@
   </header>
 
   <section class="grid header-offset">
+    <div class="col-3_sm-3_xs-3 mob-hide padded">
+      <!-- SIDE NAV -->
+      <nav role="main" class="side fixed">
+        <a class="stack padded" href="/paintings"> Paintings </a>
+        <a class="stack padded" href="/patterns"> Patterns </a>
+        <a class="stack padded" href="/textiles"> Textiles </a>
+        <a class="stack padded" href="/sketches"> Sketches </a>
+        <a class="stack padded" href="/about"> About </a>
+      </nav>
+    </div>
 
-    <!-- <div class='hamburger'>
-    _ <br>
-    _ <br>
-    _
-    </div> -->
-
-<div class="col-3_sm-3_xs-3 padded">
-  <!-- SIDE NAV -->
-  <nav class="fixed">
-    <a class="stack padded" href="/paintings"> Paintings </a>
-    <a class="stack padded" href="/patterns"> Patterns </a>
-    <a class="stack padded" href="/textiles"> Textiles </a>
-    <a class="stack padded" href="/sketches"> Sketches </a>
-    <a class="stack padded" href="/about"> About </a>
-  </nav>
-</div>
-
-<div class="col-9_sm-9_xs-col-9">
+<div class="col-9_sm-12_xs-12">
 <!-- page-content -->
   {{ content }}
 </div>
@@ -67,7 +88,6 @@
 
   <!-- FOOTER -->
   <footer>
-
     <!-- column -->
     <!-- <div class="grid padded right mobile-hide">
       <nav class="col-9_sm-12-right inline">
