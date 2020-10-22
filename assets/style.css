@@ -289,7 +289,6 @@ nav.fixed{
   /* Fixed Header Option */
   header.fixed {
     position: fixed;
-    background-color:;
     top:0;
     left:0;
     right:0;
@@ -747,7 +746,6 @@ Masonry bricks or child elements
 }
 
 /* keyframe */
-
 .dance:hover{
   animation:  dance 5s infinite;
   animation-timing-function:linear;
