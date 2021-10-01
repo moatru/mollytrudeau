@@ -1,0 +1,42 @@
+.landing-text {
+  min-height: 100%;
+}
+
+nav[role="new-main"] a {
+  font-size: 1.5rem;
+  text-transform: none;
+  /* background-image: url("/images/lightglitter.gif");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-decoration: none;
+  color: rgb(120,120,125);
+  font-family: 'Inconsolata', monospace;
+
+}
+
+h2.home {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  background-image: url("/images/lightglitter.gif");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3, h4, h5, h6 {
+  line-height: 1;
+  margin-bottom: 0.8rem;
+  color: rgb(120,120,125);
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+}
+
+h2  { font-size: 2.2rem;  }
+h3  { font-size: 1.2rem;  }
+h4  { font-size: 1rem;  }
+p   { font-size: 1rem;  }
+
+.padded {
+  padding: 5%;
+}
